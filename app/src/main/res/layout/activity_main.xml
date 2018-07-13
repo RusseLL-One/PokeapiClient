@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/attack_cb" />
+
+    <CheckBox
+        android:id="@+id/attack_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attack"
+        android:layout_margin="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/refresh_button"/>
+
+    <CheckBox
+        android:id="@+id/defence_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/defence"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/refresh_button"/>
+
+    <CheckBox
+        android:id="@+id/hp_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hp"
+        android:layout_margin="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/refresh_button"/>
+
+    <Button
+        android:id="@+id/refresh_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/refresh_button" />
+
+    <FrameLayout
+        android:id="@+id/pokemon_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="20dp"/>
+
+</RelativeLayout>

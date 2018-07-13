@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PokeapiClient</string>
+    <string name="close_button_text">Close</string>
+    <string name="refresh_button">Refresh</string>
+    <string name="attack">Attack</string>
+    <string name="defence">Defence</string>
+    <string name="hp">HP</string>
+    <string name="pic">pic</string>
+</resources>
